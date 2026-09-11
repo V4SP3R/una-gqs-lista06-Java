@@ -1,6 +1,7 @@
 # Cálculo de Fatorial em Java
 
 Lista 06 — Gestão e Qualidade de Software
+
 Autor: Geovane dos Santos Silva
 
 ## Sobre o programa
@@ -19,10 +20,12 @@ Por definição, `0! = 1`.
 
 Arquivo: `CalculoFatorial.java`
 
-**`calcularFatorial(int numero)`**
+### `calcularFatorial(int numero)`
+
 Percorre os valores de 2 até `numero` com um laço `for`, acumulando o produto na variável `fatorial` e devolvendo o resultado. Lança `IllegalArgumentException` caso receba um número negativo, já que fatorial não é definido para negativos.
 
-**`main(String[] args)`**
+### `main(String[] args)`
+
 Define o número a ser calculado, chama o método acima e imprime o resultado no console.
 
 ## Como executar
@@ -54,5 +57,3 @@ Basta alterar o valor da variável `numero` dentro do método `main` e compilar 
 ## Limite do tipo de retorno
 
 O método devolve um `long`, que comporta com segurança até `20!`. A partir de `21!` o valor ultrapassa a capacidade do tipo e o resultado passa a ser incorreto (overflow). Para números maiores, o caminho é usar a classe `BigInteger`.
-# una-gqs-lista06-Java
-Lista 06 - Gestao e Qualidade de Software: calculo de fatorial em Java
